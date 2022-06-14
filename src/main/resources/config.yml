@@ -1,0 +1,7 @@
+#This file is used to save what items can keep when players dead.
+#--------
+#You can use "/kii add" command in game to add item that you main hand held.
+#Or modify this file like this by the item material name(Not recommended):
+#  items:
+#    - minecraft:granite
+items:

@@ -1,0 +1,42 @@
+name: KeepInventoryItem
+version: '${version}'
+main: org.mf.keepinventoryitem.Main
+api-version: 1.16
+authors: [ maifan ]
+description: A plugin can keep items which specific in your inventory
+
+commands:
+  keepinventoryitem:
+    aliases:
+      - kii
+    permission: kii.help
+    usage: /kii help
+           /kii check
+           /kii add
+           /kii del <index>
+           /kii debug
+permissions:
+  kii.admin:
+    description: Allows use of all kii commands.
+    default: op
+    children:
+      kii.add: true
+      kii.del: true
+      kii.help: true
+      kii.check: true
+      kii.debug: true
+  kii.add:
+    description: Add item in your main hand to whitelist
+    default: op
+  kii.del:
+    description: Delete item from whitelist by index
+    default: op
+  kii.help:
+    description: Show command help menu
+    default: op
+  kii.check:
+    description: Show all whitelist items
+    default: op
+  kii.debug:
+    description: Show items drops and keeps to op
+    default: op
