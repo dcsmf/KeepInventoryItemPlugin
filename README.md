@@ -7,7 +7,7 @@ Java版本：JDK16
 gradle版本：7.3.3
 
 ## 构建方式
-MacOs/Linux
+MacOS/Linux
 ```shell
 ./gradlew build
 ```
